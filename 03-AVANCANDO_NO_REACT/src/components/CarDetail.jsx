@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const CarDetail = ({brands, km, color}) => {
+export const CarDetail = ({brands, km, color, newCar}) => {
   return (
     <>
       <h2>CarDetail</h2>
@@ -8,7 +8,8 @@ export const CarDetail = ({brands, km, color}) => {
         <li>Brands {brands}</li>
         <li>KM {km}</li>
         <li>Color {color}</li>
-      </ul>
+		  </ul>
+	  {newCar && <p>This car is new</p>}
     </>
   )
 }
