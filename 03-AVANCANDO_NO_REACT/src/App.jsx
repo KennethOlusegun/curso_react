@@ -4,10 +4,10 @@ import { ManageData } from './components/ManageData'
 import { ListRender } from './components/ListRender'
 import { ConditionalRender } from './components/ConditionalRender'
 import { ShowUserName } from './components/ShowUserName'
-import { useState } from 'react';
+import { useState } from 'react'
 
 function App() {
-	const [username] = useState('Maria')
+  const [username] = useState('Maria')
   return (
     <div className="App">
       <h1>03-AVANÇANDO NO REACT</h1>
