@@ -1,20 +1,20 @@
 // import { useState } from "react";
-import "./App.css";
+import './App.css'
 
-import city from "./assets/img/city.jpg";
-import { ManageData } from './components/ManageData';
-import { ListRender } from './components/ListRender';
-import { ConditionalRender } from './components/ConditionalRender';
-import { ShowUserName } from './components/ShowUserName';
-import { CarDetails } from "./components/CarDetails";
-
+import city from './assets/img/city.jpg'
+import { ManageData } from './components/ManageData'
+import { ListRender } from './components/ListRender'
+import { ConditionalRender } from './components/ConditionalRender'
+import { ShowUserName } from './components/ShowUserName'
+import { CarDetails } from './components/CarDetails'
+import { Fragment } from './components/Fragment'
 
 export default function App() {
   const cars = [
-    { id: 1, brand: "Ferrari", color: "Amarelo", km: 0 },
-    { id: 2, brand: "KIA", color: "Branco", km: 200000 },
-    { id: 3, brand: "Renault", color: "Azul", km: 32000 },
-  ];
+    { id: 1, brand: 'Ferrari', color: 'Amarelo', km: 0 },
+    { id: 2, brand: 'KIA', color: 'Branco', km: 200000 },
+    { id: 3, brand: 'Renault', color: 'Azul', km: 32000 },
+  ]
 
   return (
     <div className="App">
@@ -42,6 +42,8 @@ export default function App() {
           km={car.km}
         />
       ))}
+      {/* fragments */}
+      <Fragment />
     </div>
-  );
+  )
 }
