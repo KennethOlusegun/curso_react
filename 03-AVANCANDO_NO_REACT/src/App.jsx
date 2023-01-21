@@ -8,6 +8,7 @@ import { ConditionalRender } from './components/ConditionalRender'
 import { ShowUserName } from './components/ShowUserName'
 import { CarDetails } from './components/CarDetails'
 import { Fragment } from './components/Fragment'
+import { Container } from './components/Container'
 
 export default function App() {
   const cars = [
@@ -44,6 +45,13 @@ export default function App() {
       ))}
       {/* fragments */}
       <Fragment />
+      {/* children */}
+      <Container myValue="testing">
+        <p>É este o conteúdo</p>
+      </Container>
+      <Container myValue="testing 2">
+        <h5>Testando o container</h5>
+      </Container>
     </div>
   )
 }
