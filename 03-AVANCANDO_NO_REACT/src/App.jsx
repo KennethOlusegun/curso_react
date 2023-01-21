@@ -9,6 +9,7 @@ import { ShowUserName } from './components/ShowUserName'
 import { CarDetails } from './components/CarDetails'
 import { Fragment } from './components/Fragment'
 import { Container } from './components/Container'
+import { ExecuteFunction } from './components/ExecuteFunction'
 
 export default function App() {
   const cars = [
@@ -16,6 +17,10 @@ export default function App() {
     { id: 2, brand: 'KIA', color: 'Branco', km: 200000 },
     { id: 3, brand: 'Renault', color: 'Azul', km: 32000 },
   ]
+
+  function showMessage() {
+    console.log('Evento do componente pai')
+  }
 
   return (
     <div className="App">
@@ -52,6 +57,8 @@ export default function App() {
       <Container myValue="testing 2">
         <h5>Testando o container</h5>
       </Container>
+      {/* executar função */}
+      <ExecuteFunction myFunction={showMessage} />
     </div>
   )
 }
