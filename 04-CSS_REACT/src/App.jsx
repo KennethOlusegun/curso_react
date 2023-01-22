@@ -8,6 +8,10 @@ export default function App() {
       {/* css de componente */}
       <MyComponent />
       <p>Este paragráfo é do App.js</p>
+      {/* css inline*/}
+      <p style={{ color: 'blue', padding: "25px", borderTop: "2px solid red" }}>
+        Este elemento foi estilizado de forma inline
+      </p>
     </div>
   )
 }
