@@ -1,10 +1,11 @@
 import './App.css'
 import { MyComponent } from './components/MyComponent'
 import { useState } from 'react'
+import { Title } from './components/Title'
 
 export default function App() {
   const n = 15
-	const [name] = useState('Kenneth')
+  const [name] = useState('Kenneth')
   const redTitle = true
 
   return (
@@ -31,7 +32,12 @@ export default function App() {
         Css dinâmico
       </h2>
       {/* classe dinâmica */}
-      <h2 className={redTitle ? "red-title" : "title"}>Este título terá classe dinâmica</h2>
+      <h2 className={redTitle ? 'red-title' : 'title'}>
+        Este título terá classe dinâmica
+      </h2>
+      {/* Css modules */}
+		  <Title />
+	  <h2 className='my-title'>Teste</h2>
     </div>
   )
 }
