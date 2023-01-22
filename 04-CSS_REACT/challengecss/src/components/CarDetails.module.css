@@ -1,0 +1,20 @@
+.car_detail{
+	color: orange;
+	background-color: #000;
+	padding: 10px;
+	padding-left: 250px;
+}
+
+.car_km{
+	color: magenta;
+	background-color: #000;
+	padding: 10px;
+	padding-left: 250px;
+}
+
+.car_color{
+	color: red;
+	background-color: #000;
+	padding: 10px;
+	padding-left: 250px;
+}
