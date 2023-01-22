@@ -1,10 +1,11 @@
-import "./App.css"
-import { MyComponent } from "./components/MyComponent"
-import { useState } from "react"
+import './App.css'
+import { MyComponent } from './components/MyComponent'
+import { useState } from 'react'
 
 export default function App() {
   const n = 15
-  const [name] = useState("Kenneth")
+	const [name] = useState('Kenneth')
+  const redTitle = true
 
   return (
     <div className="App">
@@ -13,21 +14,24 @@ export default function App() {
       <MyComponent />
       <p>Este paragráfo é do App.js</p>
       {/* css inline*/}
-      <p style={{ color: "blue", padding: "25px", borderTop: "2px solid red" }}>
+      <p style={{ color: 'blue', padding: '25px', borderTop: '2px solid red' }}>
         Este elemento foi estilizado de forma inline
       </p>
       {/* css inline dinâmico */}
-      <h2 style={n < 10 ? { color: "purple" } : { color: "pink" }}>
+      <h2 style={n < 10 ? { color: 'purple' } : { color: 'pink' }}>
         Css dinâmico
       </h2>
       <h2
         style={
-          name === "Kenneth"
-            ? { color: "green", backgroundColor: "#000" }
-            : null}
+          name === 'Kenneth'
+            ? { color: 'green', backgroundColor: '#000' }
+            : null
+        }
       >
         Css dinâmico
       </h2>
+      {/* classe dinâmica */}
+      <h2 className={redTitle ? "red-title" : "title"}>Este título terá classe dinâmica</h2>
     </div>
   )
 }
