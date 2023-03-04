@@ -5,7 +5,12 @@ export default function App() {
   return (
     <div className="App">
       <h2>Forms</h2>
-      <MyForms />
+		  <MyForms user={{
+			  name: 'Josias',
+			  email: 'josias@teste.com',
+			  bio: 'sou um advogado',
+			  role: 'admin'
+		  }} />
     </div>
   )
 }
